@@ -11,14 +11,16 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
     background: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 /* top players style */
@@ -89,5 +91,49 @@ hr{
 .blog-author a{
     text-decoration: none;
     color: #562EFF;
-    ;
 }
+
+/* courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+
+.course{
+    width: 252px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    margin-left: 12px;
+}   
+
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.course-duration{
+    background: #FFE4E8;
+    border-radius: 14px;
+    padding: 3px;
+    color: #FF4A60;
+    margin-right: 20px;
+}
+
